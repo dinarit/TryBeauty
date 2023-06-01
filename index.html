@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TryBeauty</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__section">
+        <div class="header__item headerlogo">TryBeauty</div>
+        <a class="header__item headerButton" href="./index.html">Главная</a>
+        <a class="header__item headerButton" href="./about.html">О нас</a>
+        <a class="header__item headerButton" href="./test.html">JS</a>
+      </div>
+      <div class="header__section">
+        <a class="header__item headerButton" href="./reg.php">Регистрация</a>
+        <a class="header__item headerButton" href="./login.php">Вход</a>
+      </div>
+    </header>
+    <div
+      style="
+        font-family: Helmetica;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 50px;
+      "
+    >
+      <h1>Топ красивых мест в мире!</h1>
+    </div>
+    <section>
+      <div class="pic-slider">
+        <div class="pic" id="pic"></div>
+        <button id="prev_button">←</button>
+        <button id="next_button">→</button>
+      </div>
+      <p class="desc">
+        Полюбуйтесь работами фотографов со всего мира и почувствуйте атмосферу
+        фотографий. На Земле существует множество мест с незабываемыми
+        пейзажами, однако не у всех есть возможность побывать на них. По этой
+        причине был создан данный проект. Здесь вы сможете увидеть фотографии
+        как населённых пунктов, так и гор. Со временем будут появляться всё
+        более новые и интересные снимки с разных точек нашей планеты. Для
+        просмотра контента не требуется никаких обязательств, кроме прохождения
+        опроса, находящегося снизу. Наслаждайтесь небывалыми красотами!
+      </p>
+    </section>
+    <a class="cont" href="./detail.html">Посмотреть подробнее</a>
+    <div class="opros">
+      <div class="intrstng">
+        <p>Заинтересовало?</p>
+        <div><input id="radio_yes" type="radio" name="yes" />Да</div>
+        <div><input id="radio_no" type="radio" name="no" />Нет</div>
+      </div>
+      <div class="another">
+        <p class="abzac">Какую из этих стран хотели бы посетить?</p>
+        <select id="select_country" name="country">
+          <option value="france">Франция</option>
+          <option value="germany">Германия</option>
+          <option value="italy">Италия</option>
+          <option value="spain">Испания</option>
+        </select>
+      </div>
+      <div class="actions">
+        <button id="send_button">Отправить</button>
+        <button id="reset_button">Очистить</button>
+      </div>
+    </div>
+    <footer>
+      <h1>©Copyright Bagautdinov Inc</h1>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background: #8ec5fc;
+}
+
+h1 {
+  font-family: Helvetica;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #689cd2;
+  color: white;
+  font-family: Helvetica;
+}
+
+.header__section {
+  display: flex;
+  align-items: center;
+}
+
+.header__item {
+  padding: 7px 15px;
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+.header__item:hover {
+  background-color: #ff9900;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.headerlogo {
+  color: rgb(229, 21, 21);
+  font-size: 25px;
+  font-weight: bold;
+  cursor: default;
+}
+
+.headerButton {
+  cursor: pointer;
+}
+
+.container {
+  font-size: 20px;
+  padding: 16px;
+  width: 50%;
+  margin: auto;
+}
+
+.container h1 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #ffffff;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: rgb(255, 255, 255);
+  outline: none;
+}
+
+hr {
+  border: 1px solid #ffffff;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  display: block;
+  font-size: 25px;
+  text-align: center;
+  background-color: #689cd2;
+  color: white;
+  padding: 16px 20px;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.signin {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 28px;
+  align-items: center;
+  text-align: center;
+  background-color: #689cd2;
+  color: white;
+  font-family: Helvetica;
+  font-size: 11px;
+}
+
+footer h1 {
+  margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .header__item {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .headerlogo {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 588px) {
+  .registerbtn {
+    font-size: 17px;
+  }
+}
